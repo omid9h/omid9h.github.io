@@ -1,50 +1,58 @@
-{"0": {
+{
+  "0": {
     "doc": "About",
     "title": "About",
     "content": "Here is a collection of my notes and documentations which will be used as a reference. They are mostly about Python and Software Engineering stuff. You can find the source code for some of these notes at GitHub: https://github.com/omid9h . My Twitter: https://twitter.com/omid9h . ",
-    "url": "http://localhost:4000/about/",
+    "url": "https://omid9h.github.io//about/",
     "relUrl": "/about/"
-  },"1": {
+  },
+  "1": {
     "doc": "Home",
     "title": "Focus on writing good documentation",
     "content": " ",
-    "url": "http://localhost:4000/#focus-on-writing-good-documentation",
+    "url": "https://omid9h.github.io//#focus-on-writing-good-documentation",
     "relUrl": "/#focus-on-writing-good-documentation"
-  },"2": {
+  },
+  "2": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
-    "url": "http://localhost:4000/",
+    "url": "https://omid9h.github.io//",
     "relUrl": "/"
-  },"3": {
+  },
+  "3": {
     "doc": "Linux & WSL",
     "title": "Linux &amp; WSL",
     "content": "This section will be on configuring development environment on Linux &amp; Windows Subsytem of Linux (WSL) . ",
-    "url": "http://localhost:4000/docs/ui-components#linux--wsl",
+    "url": "https://omid9h.github.io//docs/ui-components#linux--wsl",
     "relUrl": "/docs/ui-components#linux--wsl"
-  },"4": {
+  },
+  "4": {
     "doc": "Linux & WSL",
     "title": "Linux & WSL",
     "content": " ",
-    "url": "http://localhost:4000/docs/ui-components",
+    "url": "https://omid9h.github.io//docs/ui-components",
     "relUrl": "/docs/ui-components"
-  },"5": {
+  },
+  "5": {
     "doc": "Initiate WSL",
     "title": "Initiate WSL",
     "content": " ",
-    "url": "http://localhost:4000/docs/linux-wsl/wsl-init.html",
+    "url": "https://omid9h.github.io//docs/linux-wsl/wsl-init.html",
     "relUrl": "/docs/linux-wsl/wsl-init.html"
-  },"6": {
+  },
+  "6": {
     "doc": "Initiate WSL",
     "title": "Table of contents",
     "content": ". | Installation | . ",
-    "url": "http://localhost:4000/docs/linux-wsl/wsl-init.html#table-of-contents",
+    "url": "https://omid9h.github.io//docs/linux-wsl/wsl-init.html#table-of-contents",
     "relUrl": "/docs/linux-wsl/wsl-init.html#table-of-contents"
-  },"7": {
+  },
+  "7": {
     "doc": "Initiate WSL",
     "title": "Installation",
     "content": "Several distros are available in Microsoft Store. I recommend using Ubuntu20.04. If installing through store was not available, download AppxBundle from store using this service and then install it via PowerShell . Add-AppxPackage -Path \"C:\\Path\\to\\File.Appx\" . ",
-    "url": "http://localhost:4000/docs/linux-wsl/wsl-init.html#installation",
+    "url": "https://omid9h.github.io//docs/linux-wsl/wsl-init.html#installation",
     "relUrl": "/docs/linux-wsl/wsl-init.html#installation"
   }
 }
