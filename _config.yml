@@ -24,7 +24,11 @@ email: omid9h@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Here is a collection of my notes and documentations which will be used as a reference. They are mostly about Python and Software Engineering stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+domain: omid9h.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://omid9h.github.io/  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /docs/      # place folder name if the site is served in a subfolder   
+
 twitter_username: omid9h
 github_username:  omid9h
 
