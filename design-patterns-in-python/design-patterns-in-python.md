@@ -3,7 +3,7 @@ layout: default
 title: Design Patterns in Python
 nav_order: 3
 has_children: true
-permalink: /docs/ui-components
+permalink: /design-patterns-in-python
 ---
 
 # Design Patterns in Python

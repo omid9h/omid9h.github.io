@@ -3,7 +3,7 @@ layout: default
 title: Linux & WSL
 nav_order: 2
 has_children: true
-permalink: /docs/ui-components
+permalink: /linux-wsl
 ---
 
 # Linux & WSL
