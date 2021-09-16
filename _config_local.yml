@@ -35,7 +35,7 @@ github_username:  omid9h
 # Build settings
 theme: "just-the-docs"
 
-# color_scheme: dark
+color_scheme: dark
 
 plugins:
   - jekyll-feed

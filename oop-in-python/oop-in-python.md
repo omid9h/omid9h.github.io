@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Design Patterns in Python
-nav_order: 3
+title: OOP in Python
+nav_order: 4
 has_children: true
-permalink: /design-patterns-in-python
+permalink: /oop-in-python
 ---
 
-# Design Patterns in Python
+# OOP in Python
 
-This section will be about my experience in design patterns and how I implement them in Python
+This section is my notes about OOP in Python
