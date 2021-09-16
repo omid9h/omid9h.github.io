@@ -170,10 +170,98 @@ class MyClass:
         self._language = language
     
     def get_language(self):
+        print('getter called')
         return self._language
 
     def set_language(self, value):
+        print('setter called')
         self._language = value
 
-    language = property(fget=get_language, fset=set_language)
+    language = property(fget=get_language, fset=set_language) 
+    # it has a fdel (for del and delattr) and doc (for docstring) too
+```
+
+notice that even if we add an attribute similar to property to the namespace of an instance 
+Python still use class property when we call it :
+
+```python
+obj = MyClass('python')
+obj.__dict__['language'] = 'something that is not property object'
+
+print(obj.language) # getter called
+```
+
+so in conclude a **Property** in Python is a class level attribute that contains a **'property' object** 
+that has info for what to use for getter and setter (and delete and docstring too)
+
+## Property Decorator
+property class also have methods (getter, setter, deleter) that can take a callable as an argument and return the 
+instance with the appropriate method now set. so we can set a property like:
+
+```python
+x = property(fget=get_x, fset=set_x)
+
+x = property()
+x = x.getter(get_x)
+x = x.setter(set_x)
+```
+
+or in our example:
+
+```python
+class MyClass:
+    def __init__(self, language):
+        self._language = language
+
+    def language(self):
+        return self._language
+    
+    language = property(language) # now we have a property with a getter (it's like decorator functionality)
+
+    # so we can change above lines like:
+    @property
+    def language(self):
+        return self._language
+    
+    # now for setter
+
+    def set_language(self, value):
+        self._language = value
+    
+    language = language.setter(set_language) # again decorator functionality
+
+    @language.setter
+    def language(self, value): # notice the name 'language' matters here
+        self._language = value
+    
+    # the name language matters here because essentially '@' syntax 
+    # decorates the function (here language) and assigns
+    # it to the same variable (language)
+```
+
+in conclusion we can use property decorator like this:
+
+```python
+class Person:
+    def __init__(self, age):
+        self.age = age
+
+    @property
+    def age(self):
+        """
+        This is Person's age that should be a number equal or greater than zero
+        """
+        return self._age
+
+    @age.setter
+    def age(self, value):
+        from numbers import Integral
+
+        if not isinstance(value, Integral) or value < 0:
+            raise ValueError
+        self._age = value
+
+    @age.deleter
+    def age(self):
+        self._age = 0
 ```
