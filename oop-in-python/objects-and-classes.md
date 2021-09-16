@@ -265,3 +265,32 @@ class Person:
     def age(self):
         self._age = 0
 ```
+
+**[Hint]** although property class is a convenient way of creating instance property, it has some drawbacks.
+first is **reusability** if we want same validation for instance several times in our project, repeating same logic
+is tedious and error prone.
+second is **extended behavior** which is sometimes needed.
+in both cases we can use our custom **data descriptor**.
+
+**[Hint]** property class is used to define **instance** properties, for creating **class** properties 
+(like class attribute, but using accessor methods) we can use **metaclasses**.
+
+## Class and Static Methods
+if we want a function to be always bound to class itself not instances we can use **@classmethod** which uses 
+meta-programming to achieve this.
+
+```python
+class MyClass:
+    @classmethod
+    def hi(cls):
+        print(f'hi from {cls}')
+
+MyClass.hi()    # hi from <class '__main__.MyClass'>
+m = MyClass()
+m.hi()          # hi from <class '__main__.MyClass'>
+```
+
+if we want a function in a class that **never** be bound to any object we use **static** methods 
+with **@staticmethod** decorator. 
+
+**[Hint]** it's almost always better to have these kind of functions (static methods) in module level.
