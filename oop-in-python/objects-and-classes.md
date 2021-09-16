@@ -141,3 +141,39 @@ obj1 = MyClass('3.9')
 # 2. it calls obj1.__init__('3.9') as a bound method and adds version to obj1's namespace
 # obj1.__dict__ => {'version': '3.9'}
 ```
+
+## Creating attributes in run-time
+for data attribute and also function attribute we can use simply dot notation or setattr but to bind a method to an
+object we can do like:
+
+```python
+from types import MethodType    # MethodType(function, object)
+
+obj.say_hello = MethodType(lambda self: f'Hello {self.language}', obj)
+```
+
+## Properties
+with consider Java OOP logic attributes that have getter and setter and accessing them directly is not possible are 
+called **Properties**. but in Python we don't have real private attribute and as a convention we use an '_' prefix 
+in names.
+
+we can use **property** class to define properties in a class.
+
+```python
+class MyClass:
+    def __init__(self, language):
+        self.language = language
+
+# using property class
+class MyClass:
+    def __init__(self, language):
+        self._language = language
+    
+    def get_language(self):
+        return self._language
+
+    def set_language(self, value):
+        self._language = value
+
+    language = property(fget=get_language, fset=set_language)
+```
