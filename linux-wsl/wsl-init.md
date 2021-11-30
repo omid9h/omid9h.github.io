@@ -16,6 +16,24 @@ nav_order: 1
 
 ---
 
+## Enable Version 2
+1. Enable WSL
+```
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
+2. Enable ‘Virtual Machine Platform’
+```
+# in Windows 10 (2004)
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+# in Windows 10 (1903, 1909)
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart
+```
+3. Set WSL 2 as default
+```
+wsl --set-default-version 2
+```
+4. Install a distro (or import one)
+
 ## Installation
 Several distros are available in **Microsoft Store**. I recommend using **Ubuntu20.04**. If installing through store was not available,  download AppxBundle from store using 
 [this service](https://store.rg-adguard.net/)
