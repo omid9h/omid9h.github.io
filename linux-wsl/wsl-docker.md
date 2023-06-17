@@ -2,7 +2,18 @@
 layout: default
 title: Docker inside WSL
 parent: Linux & WSL
-nav_order: 2
+nav_order: 3
+---
+
+# Install Docker inside WSL
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 ---
 
 This post covers doing this on Ubuntu 20.04 and 22.04 but it should work with any distro that supports running Docker. I say “should” because I didn’t personally try every single distro but there’s nothing about this that would hint it won’t work on other distros.
