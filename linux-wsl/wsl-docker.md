@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Oh My ZSH
+title: Docker inside WSL
 parent: Linux & WSL
 nav_order: 2
 ---
