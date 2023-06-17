@@ -1,3 +1,10 @@
+---
+layout: default
+title: Oh My ZSH
+parent: Linux & WSL
+nav_order: 2
+---
+
 This post covers doing this on Ubuntu 20.04 and 22.04 but it should work with any distro that supports running Docker. I say “should” because I didn’t personally try every single distro but there’s nothing about this that would hint it won’t work on other distros.
 
 You’ll get the same conveniences of Docker Desktop such as being able to access `localhost` in your Windows browser of choice to access any web services you run in Docker since this feature is native to WSL 2. Volumes are also lightning fast (comparable to native Linux).
